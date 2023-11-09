@@ -15,7 +15,7 @@ public class App {
     int rest=0;
     int increment=0;
     int nbrTeste=0;
-    int gagner=0;
+    boolean gagner=false;
     
     do {
         
@@ -33,18 +33,18 @@ public class App {
    
    
         if (rest == 0) {
-        gagner=1;
+        gagner=true;
         message="Vous avez gagné";
         System.out.println(message);
     
         }
         else {
-        gagner=0;
+        gagner=false;
         message="Vous avez perdu!";
         System.out.println(message);
         } 
         nbrTeste++;
-    } while (gagner==0);
+    } while (gagner==false);
 
     System.out.println("nombre de tentatives: "+ nbrTeste);
     }
